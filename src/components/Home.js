@@ -32,7 +32,7 @@ function Home() {
         breakPoints={breakPoints}
         pagination={false}
         focusOnSelect={true}>
-        {products.map((item) => (
+        {products?.map((item) => (
           <Item key={item.title} onClick={() => dispatch(addItem(item))}>
             <img src="milk.jpeg" alt="milk" width="100" />
             {item.title}
